@@ -13,7 +13,7 @@ jobRouter.post("/post", async (req, res) => {
   }
 });
 
-jobRouter.get("/", async (req, res) => {
+jobRouter.get("/get", async (req, res) => {
   let { page } = req.body;
   try {
     let Total_products = await JobModel.find({});
